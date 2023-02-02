@@ -8,7 +8,7 @@ const reviewSchema = new mongoose.Schema({
             required:true
       },
       reviewedBy:{
-            type:String, // value: "reviewer's name"
+            type:String,
             default:"Guest",
             required:true,
            
@@ -33,18 +33,3 @@ const reviewSchema = new mongoose.Schema({
 },{timestamps:true})
 
 module.exports = mongoose.model("reviewModel", reviewSchema)
-
-
-
-
-
-
-
-
-
-//   bookId: {ObjectId, mandatory, refs to book model},
-//   reviewedBy: {string, mandatory, default 'Guest', value: reviewer's name},
-//   reviewedAt: {Date, mandatory},
-//   rating: {number, min 1, max 5, mandatory},
-//   review: {string, optional}
-//   isDeleted: {boolean, default: false},
