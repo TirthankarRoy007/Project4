@@ -4,7 +4,7 @@ const {authentication} = require("../middlewares/commonMiddle")
 const {loginUser,createUser} = require("../controllers/userController")
 const {createBooks, getBook, updateBook, deleteBook,getBookById,} = require("../controllers/bookController")
 const {createReview,deleteReview,reviewUpdate }= require("../controllers/reviewController")
-const { uploadedFile } = require('../aws/aws.connec')
+const { uploadedFile } = require('../aws/aws')
 
 
 //user
